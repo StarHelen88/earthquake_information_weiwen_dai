@@ -1,0 +1,23 @@
+:py:mod:`earthquake_information_weiwen_dai`
+===========================================
+
+.. py:module:: earthquake_information_weiwen_dai
+
+
+Submodules
+----------
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+
+   earthquake_information_weiwen_dai/index.rst
+
+
+Package Contents
+----------------
+
+.. py:data:: __version__
+   
+
+   
+

@@ -1,0 +1,50 @@
+:py:mod:`earthquake_information_weiwen_dai.earthquake_information_weiwen_dai`
+=============================================================================
+
+.. py:module:: earthquake_information_weiwen_dai.earthquake_information_weiwen_dai
+
+
+Module Contents
+---------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   earthquake_information_weiwen_dai.earthquake_information_weiwen_dai.earthquake_info
+
+
+
+
+.. py:class:: earthquake_info(f_start, f_end, f_location)
+
+   .. py:method:: get_earthquake_info()
+
+      The 'get_earthquake_info' is a python package that can query global earthquake information by date and location and visualize the information at the same time.
+
+      :param f_start:
+      :type f_start: Starting date. Query the earthquake information starting from the initial time according to the input starting date. (string)
+      :param f_end:
+      :type f_end: Ending data. Query the earthquake information before the end time according to the input end date. (string)
+      :param f_location:
+      :type f_location: Country or region name. According to the input location, query the earthquake information that occurred near the location. (string)
+
+      :rtype: The output is a table of earthquake information that occurred near the input location at the same time as the input date. Besides, the earthquake location is marked on the map, and the html file of the map is output for users to view the specific location of the earthquake.
+
+      .. rubric:: Examples
+
+      >>> from earthquake_information_wd2366 import earthquake_information_wd2366
+      >>> get_info = earthquake_information_wd2366.earthquake_info('2022-12-13','2022-12-14', ['Hawaii', 'Washington'])
+      >>> get_info.get_earthquake_info()
+               Date      Time Magnitude  ...  Depth  Longitude    Latitude
+      0  2022-12-14  21:45:38       3.3  ...  33.59  19.208333 -155.372500
+      1  2022-12-14  20:56:46       2.9  ...  12.68  46.624167 -121.756333
+      2  2022-12-14  18:47:23       2.9  ...   5.95  20.449833 -155.664993
+      3  2022-12-14  11:32:01       2.5  ...  30.79  19.189501 -155.393005
+      4  2022-12-14  04:05:41       2.6  ...   1.06  19.424500 -155.254166
+
+      And a map file called "earthquake_info.html" is downloaded to the same local path.
+
+
+
